@@ -5,13 +5,101 @@
 */
 body{
 
-    font-family: "Fraunces",serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     background-color: hsl(30, 38%, 98%);
-    background-position-x: 50px;
-    background-position-y: 60px;
+    display: flex; /*FlexBox*/
+    justify-content: center;/*importante para centrar*/
+    align-items: center;/*alinear al centro*/
+
+    height: 100vh; /*sirve para darle altura del 100% de la pantalla*/
+    margin: 0px; /* borrar margen*/
+}
+
+main{
+    
+    border-radius: 14px;
+    width: 650px;
+    min-height: 400px;
+    
+    display: flex;
+    overflow: hidden;
+
+}
+section{
+    
+}
+.photo{
+    border: 0px solid blue;
+    width: 350px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    border: 0px solid black;
+    width: 300px;
+    background-color: white;
+
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content h3{
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase; /*cambiar a mayusculas*/
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 5px; /* espaciado de letras*/
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+.content h1{
+    font-family: "Fraunces",serif;
+    font-size: 38px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+    margin: 0;
+}
+
+.content p{
+    margin: 0;
+    font-weight: 600;/*grosor de letra*/
+    line-height: 1.5; /*juntar letras verticalmente*/
+    color: hsl(228, 12%, 48%);
+    /*text-align: justify;*/
+}
+.content div{
+    display: flex;
+    align-items: center;
+    gap:14px;
+}
+
+.content span{
+    font-family: "Fraunces",serif;
+    font-size: 32px;
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+}
+.content s{
+    color: hsl(228, 12%, 48%);
+
 }
 button{
-    background-color: rgb(13, 238, 46);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    width: 250px;
+    height: 50px;
+    background-color:hsl(158, 36%, 37%);
     color: white;
+
+    padding: 14px;
+
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 7px;
+
 }
