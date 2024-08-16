@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>DIA 01 || RETO 02</title>
+
+  <link rel="stylesheet" href="./CSS/style.css">
+
+
+</head>
+<body>
+
+  <main>
+      
+    <div class="content">
+      
+      <div class="titulo">
+
+        <h1>Mortgage Calculator</h1>
+        <h4><u>Clear All</u></h4>
+
+      </div>
+
+
+      <div class="input-euro">
+        <form>
+          <label>
+            Mortgage Amount
+            <input type="text" value="£" disabled/>
+            <input type="number" />
+          </label>
+        </form>
+      </div>
+
+
+      <div class="input-years">
+
+        <form class="part1">
+
+          Mortgage Term
+          <input type="number" />
+          <input type="text" value="years" disabled />
+
+        </form>
+
+        <form class="part2">
+
+          Interest Rate
+          <input type="number" />
+          <input type="text" value="%" disabled />
+
+        </form>
+        
+      </div>
+
+
+      <div class="input-final">
+
+        <p>Mortgage Type</p>
+
+        <form class="pay1">
+          <input type="radio" value="Repayment" />
+          Repayment
+        </form>
+
+        <form class="pay2">
+          <input type="radio" value="Interest Only" />
+          Interest Only
+        </form>
+        <button>
+          
+          <p><img src="./assets/images/icon-calculator.svg" />Calculate Repayments</p>
+
+        </button>
+      </div>
+    </div>
+
+
+    <div class="content2">
+
+      <h2>Your results</h2>
+
+      <p>Your results are shown below based on the information you provided. 
+      To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+      <section>
+        <p>Your monthly repayments</p>
+
+        
+        <p>Total you'll repay over the term</p>
+
+      </section>
+    </div>
+
+
+  </main>
+
+</body>
+</html>
