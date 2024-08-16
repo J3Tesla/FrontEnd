@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    
+</head>
+    <body>
+        <main class="container">
+            <h1>Formularios+inputs+validaciones</h1>
+            <form action=""></form>
+                <h2>INPUTS</h2>
+
+                <label for="text1">Input tipo texto</label>
+                <input type="text" placeholder="Hola" id="text1"/>
+                <hr />
+                <label > input solo lectura
+                    <input type="text"  placeholder="input solo lectura" 
+                    readonly value="Solo lectura" />
+                </label>
+                <hr />
+                <label>
+                    input desactivado
+                    <input type="text" placeholder="Input desactivado"
+                    disabled />
+                </label>
+                <hr />
+                <label>
+                    input tipo number
+                    <input type="number" placeholder="Escribe un numero"
+                     name="edad" id="name"/>
+                </label> 
+                <hr />
+                <label>
+                    input email
+                    <input type="email" placeholder="correo"
+                     name="email" />
+                </label> 
+                <hr />
+                <label>
+                    input rango(edad)
+                    <input type="range" name="range_edad" min="1" max="99" 
+                    step="10"/>
+                </label> 
+                <hr />
+                <label>
+                    input tipo tel
+                    <input type="tel" placeholder="+51" />
+                </label> 
+                <hr />
+                <label>
+                    input tipo url
+                    <input type="url" placeholder="sitio web" />
+                </label>
+                <hr />
+                <label>
+                    input tipo password
+                    <input type="password"/>
+                </label> 
+                <hr />
+                <label>
+                    input tipo color
+                    <input type="color"/>
+                </label> 
+                <hr />
+                <label>
+                    input tipo search
+                    <input type="search"/>
+                </label>
+                <hr />
+                <label>
+                    input tipo file(seleccionar .jpg) uno a la vez
+                    <input type="file" accept=".jpg" />
+                </label>
+                <hr />
+                <label>
+                    input tipo file(seleccionar .jpg) multiples archivos
+                    <input type="file" multiple/>
+                </label> 
+                <hr />
+                <label>
+                    
+                    <input type="hidden" value="datos-ocultos"/>
+
+                    <input type="submit" value="Guardar" width="200px" height="300px"/>
+                    <input type="reset" value="Limpiar"> 
+                </label> 
+                <hr />
+                <form>
+                    <h2>input tipo fecha</h2>
+                    <hr />
+                    <label>
+                        input tipo fecha datetime local
+                        <input type="datetime-local" name="fecha"/>
+                    </label> 
+                    <hr />
+                    <label>
+                        input tipo fecha date (dia)
+                        <input type="date" name="dia"/>
+                    </label> 
+                    <hr />
+                    <label>
+                        input tipo fecha week(semana)
+                        <input type="week" name="semana"/>
+                    </label> 
+                    <hr />
+                    <label>
+                        input tipo fecha month(mes)
+                        <input type="month" name="mes"/>
+                    </label> 
+
+                    <input type="submit" value="Guardar" />
+
+                </form>
+                <hr />
+                <form>
+                    <h2>TextArea</h2>
+
+                    <hr />
+                    <label>
+                        <textarea placeholder="Escribe una descripcion sobre ti"
+                        rows="10" cols="20" name="Biografia1">
+                        </textarea>
+                    </label> 
+
+                    
+                    <hr />
+                    <label>
+                        <textarea placeholder="Escribe una descripcion sobre ti"
+                        rows="5" disabled name="Biografia1">
+                        </textarea>
+                    </label> 
+
+                    <input type="submit" value="Guardar" />
+
+                </form>
+                <hr />
+                <form>
+                    <h2>SELECTS</h2>
+
+                    <hr />
+                    <label>
+                        Comida favorita
+                        <select name="comidas">
+                            <option> Seleccione su comida favorita...</option>
+                            <option value="fr">Francesa</option>
+                            <option value="it">Italiana</option>
+                            <option value="jp">Japonesa</option>
+                            <option value="pe">Peruana</option>
+                            <option value="th">Tailandesa</option>
+                        </select>
+                    </label> 
+                    <input type="submit" value="Guardar">
+                </form>
+                <hr />
+                <form>
+                    <h2>CheckBOx</h2>
+
+
+                    <h3>Lenguajes de preferencias</h3>
+
+
+                    <label>
+                        <input type="checkbox" name="english" value="en" />
+                        INGLES
+                    </label>
+                    <label>
+                        <input type="checkbox" name="spanish" value="es" />
+                        ESPAÑOL
+                    </label>
+                    <label>
+                        <input type="checkbox" name="french" value="fr" />
+                        FRANCES
+                    </label>
+                    <input type="submit" value="Guardar">
+                </form>
+                <hr />
+                <form>
+                    <h2>Radio Buttton</h2>
+
+
+                    <h3>Lenguajes de preferencias</h3>
+
+
+                    <label>
+                        <input type="radio" name="lenguaje" value="en" />
+                        INGLES
+                    </label>
+                    <label>
+                        <input type="radio" name="lenguaje" value="es" />
+                        ESPAÑOL
+                    </label>
+                    <label>
+                        <input type="radio" name="lenguaje" value="fr" />
+                        FRANCES
+                    </label>
+                    <input type="submit" value="Guardar" />
+                </form>
+                <hr />
+                <form>
+                    <h2>Validaciones</h2>
+
+                    <label>
+                        Nombre (obligatorio)
+                        <input type="text" name="nombre" required minlength="3"
+                        maxlength="15"/>
+                    </label>
+                    <hr />
+                    <label>
+                        email
+                        <input type="email" name="email" required />
+                    </label>
+                    <hr />
+                    <label>
+                        Edad
+                        <input type="number" name="edad" required />
+                    </label>
+                    <hr />
+                    <label>
+                        Telefono
+                        <input type="tel" name="edad" placeholder="+51"
+                        required pattern="\+[0-9]{2} [0-9]{3} [0-9]{3} [0-9]{3}" />
+                        <p>+51 999 999 999</p>
+                    </label>
+                    <label>
+                        Comida favorita
+                        <select name="comidas" required>
+                            <option value=""> Seleccione su comida favorita...</option>
+                            <option value="fr">Francesa</option>
+                            <option value="it">Italiana</option>
+                            <option value="jp">Japonesa</option>
+                            <option value="pe">Peruana</option>
+                            <option value="th">Tailandesa</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Enviar" />
+                </form>
+
+
+        </main>    
+    </body>
+</html>
