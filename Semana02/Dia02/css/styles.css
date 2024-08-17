@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+font-family: "Raleway", sans-serif;
+font-family: "Open Sans", sans-serif;
+*/
+
+/*GENERALES*/
+
+* { /* Selector universal  */
+    box-sizing: border-box; /* para indicarle la anchura total y no los margenes ocultos */
+    margin: 0;
+
+}
+
+html{
+    font-size: 14px;
+
+}
+
+body{
+
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(217, 28%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+a{
+    color: inherit; /*Heredar color del padre mas cercado (Body)*/
+    text-decoration: none;/* eliminar las decoraciones(subrayado,rayado,negrita,cursiva,etc*/
+}
+img{
+    /* TODO: que se adapte a cualquier tamaño */
+    max-width: 100%;
+    height: auto;
+
+}
+/* UTILIS */
+
+.hidden {
+    display: none; /* sirve para poder quitar la visibilidad*/
+}
+
+.wrapper{
+    /*width: 1000px;*/
+    /* TODO: adaptar el margen a mobiles*/
+    width: min(100% - 3rem, 1440px); /* - 3rem sirve para quitarle a los lados esa valor*/
+}
+
+/*Header Secction */
+
+.header {
+    
+    display: flex; /*para colocar a 1 al lado del otro*/
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem; /* unidad de medida basada en al fuente*/
+}
+.header__nav {
+    display: flex;
+    gap: 3rem;
+}
+
+/* HERO SECTION*/
+
+.hero{
+    
+    display: flex; /* para direccionar la imagen y los parrafos*/
+    flex-direction: column; /* cambiandole el eje para que se coloque vertical*/
+    align-items: center;
+    gap: 2rem; /*separacion entre atributos*/
+    padding-top: 5rem;  /* para que este adentro de la caja*/
+    padding-bottom: 12rem;
+
+    background-image: url(../images/bg-curvy-desktop.svg); /*agregar imagen de fondo*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+/*
+576px -> pantallas pequeñas (celular)
+768px -> pantallas pequeñas(tablets y celulares
+992px -> pantallas medianas(destock)
+1200px -> pantallas grandes(destock, tvs)
+*/
+
+@media (max-width:768px) { /* sirve para cambiarle el tamaño autoamticamente para distintos
+    dipostiivos*/
+    .hero{
+        background-image: url(../images/bg-curvy-mobile.svg);
+    }
+    
+}
+
+
+.hero__title{
+
+    width: min(100% - 3rem, 720px);
+    font-family: "Raleway", sans-serif;
+    
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.hero__text{
+    
+    width: min(100% - 3rem, 720px);
+    font-family: "Open Sans", sans-serif;
+    
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hero__button{
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem 1.5rem;
+    width: 220px;
+    color: white;
+    background: linear-gradient(
+        90deg, 
+        hsl(176, 68%, 64%)0%,
+        hsl(198, 60%, 50%) 100%);
+    transition: all 1s ease; /* para retrasar el efecto hover*/
+}
+
+.hero__button:hover{ /* para darle efectos al boton*/
+    background: linear-gradient(
+        90deg, 
+        hsl(176, 68%, 64%)35%,
+        hsl(198, 60%, 50%) 100%);
+    cursor: pointer; /* para cambiar de diseño al puntero*/
+}
+
+/* TODO: FEATURES SECTIONS */
+
+/* COLABORATION SECTIONS - MAQUETEAR ESTA SECCION*/
+
+/* TESTIMONIOS SECTIONS */
+
+/* EARLY ACCESS SECTION */
+
+/* FOOTER SECTION */
+
+
+

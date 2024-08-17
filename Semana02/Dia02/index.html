@@ -4,21 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fylo landing page</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+    <header class="header wrapper">
+      <img class="header__logo" src="./images/logo.svg" alt="LOGO FyLo">
+
+      <nav class="header__nav">
+        <a class="header__nav--active" href="">Features</a>
+        <a href="">Team</a>
+        <a href="">Sign In</a>
+      </nav>
+
+    </header>
     <main>
-      
-        Features
-        Team
-        Sign In
+        <section class="hero">
+          <img class="hero__image" src="./images/illustration-intro.png" alt="imagen_center" />
+          
+          <h1 class="hero__title">
+          All your files in one secure location, accessible anywhere.
+          </h1>
+          
+          <p class="hero__text">
+          Fylo stores all your most important files in one secure location. Access them wherever 
+          you need, share and collaborate with friends family, and co-workers.
+          </p>
 
-        All your files in one secure location, accessible anywhere.
+          <button class="hero__button">Get Started</button>
+          
+        </section>
 
-        Fylo stores all your most important files in one secure location. Access them wherever 
-        you need, share and collaborate with friends family, and co-workers.
 
-        Get Started
-
+        <section class="hidden">
         Access your files, anywhere
 
         The ability to use a smartphone, tablet, or computer to access your account means your 
@@ -88,9 +106,7 @@
         Contact Us
         Terms
         Privacy
-
-
-
+        </section>
     </main>
 </body>
 </html>
