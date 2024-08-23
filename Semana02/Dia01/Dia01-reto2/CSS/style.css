@@ -12,21 +12,68 @@ body{
 main{
     margin: 0;
     background-color: hsl(0, 0%, 100%);
-    width: 800px;
-    
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .content{
-    border: 1px solid red;
+   
     background-color: hsl(0, 0%, 100%);
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
+    margin: 0;
 
 }
 
+.content2{
+    border: 1px solid rgb(0, 55, 255);
+    background-color: hsl(0, 0%, 100%);
+    width: 500px;
+    height: 500px;
+
+}
+
+
+.content__titulo{
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    justify-items: center;
+    align-items: last baseline;
+    margin-left: 20px;
+    
+}
+.content__titulo h4{
+    margin-left: 120px;
+    color:hsl(200, 24%, 40%);
+}
+
+.euro{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    margin-left: 20px;
+    
+    border:1px solid hsl(203, 41%, 72%);
+    border-radius: 5px;
+    width: 460px;
+    display: flex;
+
+}
+.euro__p{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color:hsl(200, 24%, 40%);
+    width: 25px;
+}
+.euro__valor{
+    border:0px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 5px;
+    height: 10px;
+    line-height: 900;
+}
 
 
 
