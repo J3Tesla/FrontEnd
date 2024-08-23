@@ -138,14 +138,312 @@ img{
 }
 
 /* TODO: FEATURES SECTIONS */
+.features{
+    
+    background-color: hsl(218, 28%, 13%);
+
+    display: grid; /*se usa para darle distribucion de coluymnas y filas*/
+    grid-template-columns: 350px; /* formamos 2 columnas de 100 pixeles*/
+    justify-content: center; /* aliniar los elementos horizontalmeten*/
+    gap: 4rem;
+    
+}
+
+@media (min-width: 1200px)/*Se aplica en dispositovs como destocks hacia arriba*/
+{
+    .features{
+        grid-template-columns: 350px 350px; /* formamos 2 columnas de 100 pixeles*/
+    }
+   
+}
+
+
+
+.feature{
+    
+    display:flex; /* acomoda los elementos al costado*/
+    flex-direction: column; /* para que cada elemento este uno debajo el otro*/
+    align-items: center;/* centrar los elementos para que se no ocupe el 100%*/
+    gap: 1rem;/*espaciado de cada elemento*/
+    text-align: center;
+
+}
+
+.feature__image{
+    height: 70px;
+}
+
+.feature__title{
+
+    font-family: "Raleway", sans-serif;
+}
+
+.feature__text{
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
 
 /* COLABORATION SECTIONS - MAQUETEAR ESTA SECCION*/
 
+.collaboration{
+    background-color: hsl(218, 28%, 13%);
+    display: flex; /*coloca los elementos al lado dle otro*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    padding-top: 8rem;
+    
+}
+
+@media (min-width: 1200px)/*Se aplica en dispositovs como destocks hacia arriba*/
+{
+    .collaboration{
+        
+        flex-direction: row; /* colocamos para destock uno al costado del otro*/
+    }
+}
+
+/*.collaboration img{
+    border: 1px solid yellow;
+}*/
+
+.how_works{
+
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    min-width: min(100% - 3rem, 480px) /* para adapatar el ancho al de destock*/
+}
+.how_works__title{
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 2.5rem;
+
+}
+.how_works__text{
+
+    font-family: "Open Sans", sans-serif;
+}
+.how_works__button{
+    color: hsl(176, 68%, 64%);
+    display: flex;
+    align-items: center; /*para alinear el texto y la img*/
+    gap: 0.5rem;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    width: 10.8rem;
+
+    padding-bottom: 0.2rem; /*padding funciona como margen interno y margin, sirve para margen externo   */
+
+}
+
+
 /* TESTIMONIOS SECTIONS */
+
+.testimonials{
+    
+    background-color: hsl(218, 28%, 13%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding-top: 8rem;
+    padding-bottom: 18rem;
+    
+}
+
+
+@media (min-width: 1200px)/*Se aplica en dispositovs como destocks hacia arriba*/
+{
+    .testimonials{
+        
+        flex-direction: row; /* colocamos para destock uno al costado del otro*/
+        gap: 5rem;
+    }
+}
+
+.testimonial{
+    
+    width: 23rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem; /*top rigth bottom left*/
+    border-radius: 0.5rem;
+    border: 1rem solid hsla(219, 30%, 18%, 0.273);
+    background-color: hsl(219, 30%, 18%);
+
+}
+
+.testimonial--quote{
+   
+    top: 100px;
+    right: 500;
+    
+}
+
+.testimonial__text{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.testimonial__profile{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+.testimonial__profile img{
+    border-radius: 50%;
+}
+
+.testimonial__profile h4{
+    font-weight: 700;
+}
+
+.testimonial__profile h5{
+    font-weight: 400;
+}
+
 
 /* EARLY ACCESS SECTION */
 
-/* FOOTER SECTION */
+.early_access{
+    
+    width: min(100%-3rem, 51.5rem);
 
+    position: absolute; /*la zona a mover*/
+    top: 0;
 
+    left: 50%;
+    transform: translate(-50%, -50%); /*para moverlo al centro*/
 
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    background-color:hsl(216, 53%, 9%) ;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px #111; /* para agregarle sombras */
+
+}
+
+.early_access h2 {
+    font-size: 2rem;
+  }
+  
+  .early_access p {
+    text-align: center;
+  }
+  
+  .early_access form {
+    display: flex;
+    gap: 2rem;
+  
+    width: 100%;
+  }
+  
+  .early_access input[type=text] {
+    border-radius: 1.5rem;
+    border: 0;
+    padding: 1rem 2rem;
+    width: min(100%, 30rem);
+  }
+  
+  .early_access input[type=submit] {
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem 1.5rem;
+    color: hsl(0, 0%, 100%);
+    background: 
+      linear-gradient(
+        90deg, 
+        hsl(176, 68%, 64%) 0%, 
+        hsl(198, 60%, 50%) 100%
+      );
+    transition: all 1s ease;
+  }
+  
+  .early_access input[type=submit]:hover {
+    background: 
+      linear-gradient(
+        90deg, 
+        hsl(176, 68%, 64%) 35%, 
+        hsl(198, 60%, 50%) 100%
+      );
+    cursor: pointer;
+  }
+  
+  /* FOOTER SECTION  */
+  
+  .footer {
+    position: relative;
+    background-color: hsl(216, 53%, 9%);
+    padding: 15rem 0 5rem 0;
+  }
+
+  .footer--wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    width: min(100% - 3rem,76rem);
+    margin: 0 auto;
+  }
+
+  .footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    width: 100%;
+    justify-content: space-between;/*para que se separen por igual*/
+
+  }
+  
+@media (min-width: 1200px)/*Se aplica en dispositovs como destocks hacia arriba*/
+{
+    .footer-info{
+        
+        flex-direction: row; /* colocamos para destock uno al costado del otro*/
+        gap: 5rem;
+    }
+}
+
+.footer-info__description{
+    width: 22rem;
+
+    display: flex;
+    align-items: flex-start;/* que los elementos se alinean veritcalmente a la parte superior*/
+    gap: 1.5rem;
+}
+
+.footer-info__contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer-info__contact span{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-info__links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+}
+
+.footer-info__social{
+    display:flex ;
+    gap: 0.5rem;
+}
