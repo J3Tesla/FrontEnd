@@ -445,9 +445,21 @@ function esMayorOMenorDeEdad(edad)
     }
 }
 
+
 esMayorOMenorDeEdad(38)
 esMayorOMenorDeEdad(8)
 esMayorOMenorDeEdad(3)
 
 // FUNCIONSS CON RETORNO
 
+function esMayorOMenorDeEdadConRetorno(edad)
+{
+    if(edad >= 18)
+    {
+        return "Mayor de edad"
+    }else{
+        return "menor de edad"
+}
+}
+const reesultado = esMayorOMenorDeEdadConRetorno(15)
+    console.log(reesultado)
