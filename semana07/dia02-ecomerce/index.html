@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce product page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header wrapper">
+    <div class="header__wrapper">
+      <img class="header__logo" src="./images/logo.svg" />
+
+      <nav class="header__links flex">
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </div>
+    <div class="header__icons">
+      <img class="header__icons-car" src="./images/icon-cart.svg" />
+      <img class="header__icons-profile" src="./images/image-avatar.png" height="40px" />
+    </div>
+  </header>
+
+  <main class="product__details wrapper">
+    <section class="gallery">
+      <div>
+        <img src="./images/image-product-1.jpg" ">
+      </div>
+      
+      <div class="gallery__div">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="product">
+      <h2 class="product__subtitle">SNEAKER COMPANY</h2>
+
+      <h1 class="product__title">Fall Limited Edition Sneakers</h1>
+
+      <p class="product__description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="product__price">
+        <div class="product__wrapper">
+          <span class="product__amount">$125.00</span>
+          <span class="product__discount">50%</span>
+        </div>
+        <span class="product__price-with-discount">$250.00</span>
+      </div>
+
+      <form class="product__form">
+        <div class="product__quantity">
+          <button>
+            <img src="./images/icon-minus.svg" />
+          </button>
+          <span>0</span>
+          <button>
+            <img src="./images/icon-plus.svg" />
+          </button>
+        </div>
+
+        <button class="product__add-to-cart">
+          <img src="./images/icon-cart.svg" />
+          Add to cart
+        </button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

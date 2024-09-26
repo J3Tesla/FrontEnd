@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*
+font-family: "Kumbh Sans", sans-serif;
+*/
+
+/* CUSTOM PROPERTIES <> VARIABLES CONSTANTES */
+
+:root {
+    /*fonts*/
+    --font-primary:"Kumbh Sans", sans-serif;
+    --font-size: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /*COLORS*/
+    --primary-orange:hsl(26, 100%, 55%);
+    --primary-pale-orange:hsl(25, 100%, 94%);
+
+    /* COLORS NEUTRAL */
+    --neutral-very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-grayish-blue: hsl(220, 14%, 75%);
+    --neutral-light-grayish-blue: hsl(223, 64%, 98%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-black: hsl(0, 0%, 0%);
+}
+
+/*  GENERAL  */
+* {
+    box-sizing: border-box;/*para eviar el calculo de las cajas sin el padding*/
+    margin: 0;
+}
+
+html{
+    font-size: var(--font-size);
+
+}
+
+
+body{
+    font-family: var(--font-primary);
+
+}
+ 
+img{
+    /* RWD para imagenes*/
+    max-width: 100%; /* para que se adapte al 100% del ancho*/
+    height: auto;/* altura automatica*/
+}
+
+a{
+    text-decoration: none;
+    color: inherit; /* para asumir el color del elemeto padre*/
+}
+/* utilitarios**********************************************/
+.wrapper{
+    width: min(100% - 3rem, 1200px);
+
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/************************************************************/
+/* Header */
+
+header{
+    border-bottom: 1px solid var(--neutral-grayish-blue);
+
+    
+
+    display: flex;
+    justify-content: space-between; /* para llevarlos a los extremos*/
+    align-items: center;
+
+    padding: 1.5rem;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__links{
+    font-size: 0.8rem;
+    color: var(--neutral-dark-grayish-blue);
+    gap: 1rem;
+
+}
+
+.header__icons
+{   
+
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    gap: 2rem;
+
+}
+
+.header__icons-car{
+   height: 20px;
+    
+}
+.header__icons-profile{
+    height: 50px;
+}
+
+/* productos details */
+
+.product__details{
+    display: flex;
+
+    gap: 5rem;
+
+    padding: 5rem 3rem;
+}
+
+/* gallery*/
+
+
+
+/* product */
+
+.product{
+
+    padding: 2rem 1.5rem;
+
+}
+.product__subtitle{
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    color: var(--neutral-dark-grayish-blue);
+}
+.product__title{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    color: var(--neutral-very-dark-blue);
+
+}
+.product__description{
+    color: var(--neutral-dark-grayish-blue);
+    line-height: 1.5;
+    margin-top: 1.5rem;
+
+}
+.product__price{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.product__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product__amount{
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--neutral-very-dark-blue);
+}
+.product__discount{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-weight: var(--font-weight-bold);
+
+}
+
+.product__price-with-discount{
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--neutral-dark-grayish-blue);
+    text-decoration: line-through;
+    margin-top: 1rem;
+
+}
+.product__form{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__quantity{
+    margin-top: 2rem;
+
+    display: flex;
+    overflow: hidden;
+
+}
+.product__quantity button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--neutral-light-grayish-blue);
+    cursor: pointer;
+}
+.product__quantity span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--neutral-light-grayish-blue);
+    font-size: 1.1rem;
+
+}
+.product__add-to-cart{
+    margin-top: 2rem;
+    background-color: var(--primary-orange);
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
