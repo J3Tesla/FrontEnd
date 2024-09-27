@@ -6,7 +6,7 @@
 .container{
     border: 1px solid red;
     
-    width: min(100% -3rem, 400px);
+    width: min(100% - 3rem, 400px);
     margin: 0 auto;
 }
 
